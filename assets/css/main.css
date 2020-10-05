@@ -1,0 +1,85 @@
+@font-face{
+	font-family: BwDariusRegular;
+	src: url('../fonts/BwDarius/BwDariusRegular.otf');
+}
+@font-face{
+	font-family: BwDariusBold;
+	src: url('../fonts/BwDarius/BwDariusBold.otf');
+}
+body{
+	background-color: #E7E8E8;
+	font-family: BwDariusRegular;
+}
+h2{
+	font-size: 50px;
+	font-family: BwDariusBold;
+}
+hr{
+	background-color: #e8a045;
+	height: 2px;
+	border-top: none;
+}
+h5{	
+	color: #003f70;
+	font-family: BwDariusBold;
+}
+h6{	
+	color: #003f70;
+	font-family: BwDariusBold;
+}
+b{	
+	color: #003f70;
+}
+p{	
+	color: #003f70;
+	font-size: 18px;
+	font-family: BwDariusRegular;
+}
+em{
+	color: #003f70;
+}
+a.btn-iscriviti{
+	font-size: 30px;
+	background-color: #E29B43;
+	display: inline-block;
+	color: #003f70;
+	border-radius: 0;
+	font-family: BwDariusBold;
+	padding: 10px 20px;
+}
+b.scarica{
+	font-family: BwDariusBold;	
+	color: #003f70;
+	font-size: 18px;
+	padding-bottom: 5px;
+	border-bottom: 8px solid #E29B43;
+}
+span.del{
+	border-left: 2px solid #E29B43;
+	border-right: 2px solid #E29B43;
+	display: inline-block;
+	padding: 40px;
+}
+.early{
+	display: inline-block;
+	background-color: #E29B43;
+	padding: 30px 10px;
+}
+.early a{
+	color: #003f70;
+	font-size: 24px;
+	font-family: BwDariusBold;
+	padding: 0 30px;
+}
+a:hover{
+	text-decoration: none;
+}
+.early img{
+	transform: translateY(-50%);
+}
+span.line{
+	text-decoration: line-through #E29B43 solid ;
+}
+strong{
+	font-family: BwDariusBold;
+}
