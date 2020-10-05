@@ -94,6 +94,94 @@
 			</div>
 		</div>
 		<hr>
+		
+		<div class="row maintenance-count">
+			<div class="col-xl-6 mx-auto">
+				<div class="row text-center">
+					<div class="col">
+						<h5>GIORNI</h5>
+						<p><span id="d1">9</span><span id="d2">5</span></p>
+					</div>
+					<div class="col">
+						<h5>ORE</h5>
+						<p><span id="hr1">2</span><span id="hr2">4</span></p>
+					</div>
+					<div class="col">
+						<h5>MINUTI</h5>
+						<p><span id="m1">5</span><span id="m2">6</span></p>
+					</div>
+					<div class="col">
+						<h5>SECONDI</h5>
+						<p><span id="s1">5</span><span id="s2">6</span></p>
+					</div>
+				</div>
+			</div>
+
+	<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("November 13, 2020 12:00:00").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	  // Get today's date and time
+	  var now = new Date().getTime();
+
+	  // Find the distance between now and the count down date
+	  var distance = countDownDate - now;
+
+	  // Time calculations for days, hours, minutes and seconds
+	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+	  // Display the result in the element with id="demo"
+
+	  //Day Counter
+	 
+	  	if(days<10){
+	  		days = '0'+days;
+	  	}
+	  
+	  var dy = days.toString().split('');
+	  document.getElementById("d1").innerHTML = dy[0];
+	  document.getElementById("d2").innerHTML = dy[1];
+	  // document.getElementById("d3").innerHTML = dy[2];
+
+	  //Hour Counter
+	  if(hours<10){
+	  	hours = '0'+hours;
+	  }
+	  var hr = hours.toString().split('');
+	  document.getElementById("hr1").innerHTML = hr[0];
+	  document.getElementById("hr2").innerHTML = hr[1];
+
+	  //Minute Counter
+	  if(minutes<10){
+	  	minutes = '0'+minutes;
+	  }
+	  var min = minutes.toString().split('');
+	  document.getElementById("m1").innerHTML = min[0];
+	  document.getElementById("m2").innerHTML = min[1];
+
+	  //Second Counter
+	  if(seconds<10){
+	  	seconds = '0'+seconds;
+	  }
+	  var sec = seconds.toString().split('');
+	  document.getElementById("s1").innerHTML = sec[0];
+	  document.getElementById("s2").innerHTML = sec[1];
+
+	  // If the count down is finished, write some text
+	  if (distance < 0) {
+	    clearInterval(x);
+	    document.getElementById("demo").innerHTML = "EXPIRED";
+	  }
+	}, 1000);
+	</script>
+		</div>
+		<hr>
 		<div class="row">
 			<div class="col-xl-12">
 				<h5 class="text-center">Dal 6 novembre: 900€ +iva</h5>
